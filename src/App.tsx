@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from './Components/Header';
 import History from './Components/History';
 import ExpenseDetail from './Components/ExpenseDetail';
 import Expense from './Components/Expense';
+import Balance from './Components/Balance';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Balance />
       <ExpenseDetail />
-      <h2>History</h2>
+      <h2>HISTORY</h2>
       <History />
       <Expense />
     </div>

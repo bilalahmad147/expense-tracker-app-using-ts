@@ -4,6 +4,7 @@ import '../App.css';
 const History = () => {
     return (
         <div>
+            <hr />
             <ul>
                 <h3 className="historyList">
                     <li>Books</li>
