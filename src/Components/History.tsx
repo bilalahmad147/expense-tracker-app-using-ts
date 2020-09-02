@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import ExpenseContext from './ExpenseContext'
 import '../App.css';
 
 const History = () => {
+
+    const HistoryContext = useContext(ExpenseContext);
     return (
         <div>
             <hr />
             <ul>
-                <h3 className="historyList">
-                    <li>Books</li>
-                    <li>10$</li>
-                </h3>
+                {HistoryContext.map((tranObj, ind:number) => {
+                    return (
+                        <div>
+                            <h3 key={ind} className="historyList">
+                                <li>{tranObj.desc}</li>
+                                <li>{tranObj.amount}$</li>
+                            </h3>
+                        </div>
+                    )
+                })}
             </ul>
         </div>
     )
