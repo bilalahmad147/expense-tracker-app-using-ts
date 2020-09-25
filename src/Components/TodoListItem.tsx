@@ -9,7 +9,7 @@ interface Props {
     todo: Todo;
 }
 
-TodoListItem: React.FC <Props> = ({ todo }) => {
+export const TodoListItem: React.FC <Props> = ({ todo }) => {
     return (
         <li>
             <label
@@ -20,5 +20,3 @@ TodoListItem: React.FC <Props> = ({ todo }) => {
         </li>
     );
 };
-
-export default TodoListItem;
